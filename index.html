@@ -5,12 +5,170 @@
         <title>Машина Тьюринга</title>
         <meta charset="UTF-8">
     </head>
-    <style>
-        body {
-            background-color: aquamarine;
+      <style>
+            .libraly {
+                display: none;
+            }
+            p {
+                font-size: 16px; 
+            }
+            body {
+                font-family: 'Inter', -apple-system, sans-serif;
+                background-color: rgb(215, 207, 191);
+                font-size: 16px;
+            }
+            button {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                background: rgb(134, 114, 89);
+                color: white;
+                font-weight: 1000;
+                font-size: 1rem;
+                padding: 0.75rem 1.8rem;
+                border-radius: 15px;
+                border: none;
+                cursor: pointer;
+                transition: var(--transition);
+                box-shadow: 0 4px 8px rgba(93, 74, 58, 0.1);
+                border: 1px solid rgba(255,255,255,0.05);
+                letter-spacing: 0.3px;
+            }
+            button:hover {
+                background-color: rgb(30, 57, 75);
+                transform: translateY(-2px);
+            }
+            input {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                background: rgb(134, 114, 89);
+                color: white;
+                font-weight: 1000;
+                font-size: 1rem;
+                padding: 0.75rem 1.8rem;
+                border-radius: 20px;
+                border: none;
+                cursor: pointer;
+                transition: var(--transition);
+                box-shadow: 0 4px 8px rgba(93, 74, 58, 0.1);
+                border: 1px solid rgba(255,255,255,0.05);
+                letter-spacing: 0.3px;
+            }
+            textarea {
+                background: rgb(134, 114, 89);
+                color: white;
+                font-weight: 1000;
+                font-size: 1rem;
+                padding: 0.75rem 1.8rem;
+                border-radius: 20px;
+                border: none;
+                transition: var(--transition);
+                box-shadow: 0 4px 8px rgba(93, 74, 58, 0.1);
+                border: 1px solid rgba(255,255,255,0.05);
+                letter-spacing: 0.3px;
+                width: 30%;
+                min-height: 150px;
+                font-family: "Consolas", 'Inter', monospace;
+            }
+            .result {
+                font-family: "Consolas", 'Inter', -apple-system, sans-serif;
+                font-weight: 900;
+                font-size: x-large;
+            }
+            a {
+                color: rgba(30, 57, 75);
+                font-size: 15px;
+            } 
+            h1:hover {
+                color: rgb(30, 57, 75); 
+            }
+            a:hover {
+                color: black;
+            }
+            .real-file-input {
+                display: none;
+            }
+            img {
+                vertical-align: bottom;
+            }
+            input::placeholder {
+                color: white;  
+                opacity: 0.5;             
+            }
+            img:hover {
+                transform: translateY(-2px);
+            }
+            .ok {
+                background-color: rgb(115, 84, 83);
+            }
+            .ok:hover {
+                background-color: rgb(63, 33, 9);
+            }
+            textarea::placeholder {
+              color: white;
+              opacity: 0.5;
+            }
+            .toast {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background-color: rgb(30, 57, 75);
+                color: white;
+                padding: 10px 20px;
+                border-radius: 20px;
+                font-size: 14px;
+                opacity: 0;
+                transition: opacity 0.3s;
+                pointer-events: none;
+                z-index: 1000;
+            }
+           .theory-card {
+            position: fixed;
+            right: 25px;
+            top: 73px;
+            width: 500px;
+            height: 70%;
+            opacity: 1;
+            max-height: calc(100% - 130px);
+            overflow-y: auto;
+            background: rgba(134, 114, 89); 
+            color: white;
+            border-radius: 28px;
+            padding: 18px 20px;
+            font-family: 'Inter', -apple-system, sans-serif;
+            z-index: 1000;
+      
         }
-
-    </style>
+     
+@media (max-width: 900px) {
+    .theory-card {
+        position: static;
+        width: 50%;
+        height: 350px;
+        opacity: 1;
+        max-height: calc(100% - 130px);
+        overflow-y: auto;
+        background: rgba(134, 114, 89); 
+        color: white;
+        border-radius: 28px;
+        padding: 18px 20px;
+        font-family: 'Inter', -apple-system, sans-serif;
+        z-index: auto;
+    }
+    
+   
+    body {
+        padding: 10px;
+    }
+    
+    label[for="9"] {
+        display: inline-block;
+        margin-top: 20px;
+    }
+}
+        </style>
     <body>
         <p>Здесь будет машина тьюринга, заходите позже =)</p>
     </body>
